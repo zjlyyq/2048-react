@@ -1,0 +1,161 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* background: #a6988e; */
+}
+body {
+  background: #faf7ec;
+}
+.cols {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin: 3px;
+  background: #c0b5b1;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: bottom;
+  border-radius: 4px;
+}
+
+#container {
+  background: #a6988e;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* #EAE0E0 */
+
+.direction {
+  width: 50px;
+  height: 50px;
+  background: url("./images/up.png");
+  background-size: cover;
+  display: inline-block;
+  cursor: pointer;
+}
+.direction:hover {
+  opacity: 0.6;
+}
+.dir_container .direction:nth-child(1) {
+  background: url("./images/wayfinding.png");
+  background-size: cover;
+}
+.dir_container .direction:nth-child(2) {
+  background: url("./images/forward.png");
+  background-size: cover;
+}
+.ops > .direction:nth-child(3) {
+  background: url("./images/down.png");
+  background-size: cover;
+}
+.ops {
+  width: 160px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+.dir_container {
+  display: flex;
+  justify-content: space-between;
+}
+.preview {
+  text-align: center;
+}
+
+.preview img {
+  width: 80%;
+}
+.flex-x {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.info-board {
+  padding: 10px 20px;
+  /* width: 100%; */
+  margin-bottom: 20px;
+}
+
+.mode-info {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  line-height: 80px;
+  text-align: center;
+  background: #eac400;
+}
+.score-info {
+  height: 80px;
+  width: 50%;
+  /* display: inline-block; */
+}
+.score-detail,
+.op-detail {
+  display: inline-block;
+  background: #b7aa9d;
+  border-radius: 5px;
+  width: 40px;
+  padding: 5px 9px;
+  font-size: 12px;
+  color: #fff;
+}
+.op-detail {
+  background: #ec985b;
+}
+.score-detail div:nth-child(1) {
+  color: #cec5bd;
+}
+/* 
+const colors = {
+  "2": "#EFE5DB",
+  "4": "#EDDCBE",
+  "8": "#F3B079",
+  "16": "#F7925C",
+  "32": "#F57656",
+  "64": "#F4522C",
+  "128": "#EDCE71",
+  "256": "#E6D151"
+};
+*/
+
+.bits-2 {
+  background: #efe5db;
+}
+.bits-4 {
+  background: #eddcbe;
+}
+.bits-8 {
+  background: #f3b079;
+}
+.bits-16 {
+  background: #f7925c;
+}
+.bits-32 {
+  background: #f57656;
+}
+.bits-64 {
+  background: #f4522c;
+}
+.bits-128 {
+  background: #edce71;
+}
+.bits-256 {
+  background: #e6d151;
+}
+.bits-512 {
+  background: #eac300;
+}
